@@ -1,0 +1,25 @@
+package javalabs;
+
+class A {
+    A() {
+        System.out.println("I am in class A");
+    }
+}
+
+class B extends A {
+    B() {
+        System.out.println("I am in class B");
+    }
+}
+
+class C extends B {
+    C() {
+        System.out.println("I am in class C");
+    }
+}
+
+public class javalabs {
+    public static void main(String[] args) {
+        C obj = new C();  // Creating an object of class C
+    }
+}
