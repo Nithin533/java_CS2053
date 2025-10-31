@@ -1,0 +1,19 @@
+import java.util.Scanner; 
+public class master
+{
+    public static void main(String[] args)
+    {
+       Scanner s = new Scanner(System.in);
+       System.out.println("Enter a number");
+       int a=0;
+       int num = s.nextInt();
+       while (num != 0)
+       {
+          int b = num % 10;  
+            a += b;          
+            num = num / 10; 
+       }
+       System.out.println("The sum of number = " + a);
+    s.close();  
+ }
+}
